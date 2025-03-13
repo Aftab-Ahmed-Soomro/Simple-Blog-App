@@ -23,14 +23,15 @@ const router = createBrowserRouter([
                 path : '/login',
                 element : <Loginpage />
             },
-            {
-                path : '/dashboard',
-                element : <PrivateRoute>
-                            <DashboardPage />
-                          </PrivateRoute>
-            },
         ]
-    }
+        
+    },
+    {
+        path : '/dashboard',
+        element : <PrivateRoute>
+                    <DashboardPage />
+                  </PrivateRoute>
+    },
 ])
 
 export default router;
